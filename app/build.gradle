@@ -1,0 +1,6 @@
+plugins {
+    id 'java'
+}
+
+logger.quiet("Property `a` value by `providers.gradleProperty`: ${providers.gradleProperty("a").getOrNull()}")
+logger.quiet("Property `a` value by `property`: ${property("a")}")
